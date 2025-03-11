@@ -11,11 +11,13 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #1B4332aa); /* Updated to green */
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #1a4b83aa); /* Updated to blue */
 }
 
 @keyframes logo-spin {
@@ -38,5 +40,35 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #1B4332; /* Updated to green */
+}
+
+/* Sierra Leone Theme Colors */
+:root {
+  --sl-green: #1B4332;
+  --sl-green-light: #2D6A4F;
+  --sl-blue: #1a4b83;
+  --sl-blue-light: #2563EB;
+  --sl-white: #ffffff;
+}
+
+/* Theme specific classes */
+.sl-text-green {
+  color: var(--sl-green);
+}
+
+.sl-bg-green {
+  background-color: var(--sl-green);
+}
+
+.sl-text-blue {
+  color: var(--sl-blue);
+}
+
+.sl-bg-blue {
+  background-color: var(--sl-blue);
+}
+
+.sl-gradient {
+  background: linear-gradient(to right, var(--sl-green), var(--sl-blue));
 }

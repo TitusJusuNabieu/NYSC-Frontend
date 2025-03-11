@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Youth Service</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.1/tailwind.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slide-transition {
+            transition: all 0.5s ease-in-out;
+        }
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+        .bg-white\/95 {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+        .bg-white\/20 {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .bg-white\/30 {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .bg-black\/50 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <a href="/" class="text-xl font-bold text-blue-600">
+                        National Youth Service
+                    </a>
+                    
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Home</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">About Us</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Programs</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">News & Events</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Contact</a>
+                        <button class="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200">
+                            Apply Now
+                        </button>
+                    </div>
+
+                    <button class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative h-screen bg-gray-900">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080')"></div>
+            
+            <div class="relative z-20 h-full flex items-center justify-center text-white">
+                <button class="absolute left-4 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="text-center px-4 max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-transition">
+                        Empowering Youth for a Better Future
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8 slide-transition">
+                        Join us in shaping tomorrow's leaders through service, innovation, and leadership development.
+                    </p>
+                    <button class="px-6 py-3 bg-[#2563EB] text-white rounded-md hover:bg-[#1d4ed8] inline-flex items-center">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="absolute right-4 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+                <button class="w-8 h-2 rounded-full bg-white"></button>
+                <button class="w-2 h-2 rounded-full bg-white/50"></button>
+                <button class="w-2 h-2 rounded-full bg-white/50"></button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 px-4 lg:px-8 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold mb-8">About National Youth Service</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <p class="text-gray-600">
+                            The National Youth Service (NYS) is a government agency established by an Act of Parliament in 2016. Our mandate is to provide a structured platform for young graduates to participate in nation-building while developing their professional skills and competencies.
+                        </p>
+                        <p class="text-gray-600">
+                            Through our one-year service program, we deploy graduates to various sectors where they contribute meaningfully to national development while gaining valuable work experience, leadership skills, and professional development opportunities.
+                        </p>
+                        <div class="flex gap-4">
+                            <button class="px-4 py-2 bg-[#2563EB] text-white rounded-md hover:bg-[#1d4ed8]">
+                                Apply for NYS
+                            </button>
+                            <button class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg">
+                        <img src="/api/placeholder/800/600" alt="Youth Service Activities" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 px-4 lg:px-8 bg-gray-50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold text-center mb-12">What We Offer</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            To provide opportunities for young graduates to contribute to national development through structured service programs while gaining valuable work experience and professional skills.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-sm border">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Our Vision</h3>
+                        <p class="text-gray-600">
+                            To be the premier national service scheme that transforms young graduates into productive citizens and future leaders of Sierra Leone through structured service programs.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-sm border">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Core Values</h3>
+                        <p class="text-gray-600">
+                            We are guided by Professionalism, Integrity, Excellence, Innovation, and Patriotism in our service to the nation and development of young graduates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="py-20 px-4 lg:px-8 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold mb-12">Latest Updates</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Sample News Title</h3>
+                            <span class="text-sm text-gray-500">Feb 21, 2025</span>
+                        </div>
+                        <span class="inline-block px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded mb-4">
+                            News
+                        </span>
+                        <p class="text-gray-600 mb-4">
+                            Sample news excerpt goes here. This would be replaced with actual news content from your data source.
+                        </p>
+                        <a href="#" class="text-[#2563EB] font-semibold inline-flex items-center">
+                            Read more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-sm border">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Another News Title</h3>
+                            <span class="text-sm text-gray-500">Feb 20, 2025</span>
+                        </div>
+                        <span class="inline-block px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded mb-4">
+                            Event
+                        </span>
+                        <p class="text-gray-600 mb-4">
+                            Another sample news excerpt goes here. This would be replaced with actual news content from your data source.
+                        </p>
+                        <a href="#" class="text-[#2563EB] font-semibold inline-flex items-center">
+                            Read more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button class="px-4 py-2 border border-gray-300 rounded-md hover:bg-[#2563EB] hover:text-white inline-flex items-center">
+                        View All News
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-blue-600 text-white">
+            <div class="container mx-auto px-4 lg:px-8 py-12">
+                <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-lg">National Youth Service</h3>
+                        <p class="text-blue-100 leading-relaxed">Empowering youth through service and leadership development.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-white">Quick Links</h4>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Home</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">About</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Programs</a>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-white">Resources</h4>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">News</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Events</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Contact</a>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-white">Connect</h4>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Twitter</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">LinkedIn</a>
+                            <a href="#" class="text-blue-100 hover:text-white transition-colors duration-200">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-blue-100 border-t border-blue-500 pt-8">
+                    <p>© 2025 National Youth Service. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+</div>
+
+<script>
+    // Simple slider functionality
+    const slides = [
+        {
+            title: "Empowering Youth for a Better Future",
+            subtitle: "Join us in shaping tomorrow's leaders through service, innovation, and leadership development."
+        },
+        {
+            title: "Building Tomorrow's Leaders",
+            subtitle: "Develop essential skills and create meaningful impact in your community."
+        },
+        {
+            title: "Create Lasting Change",
+            subtitle: "Be part of a movement that transforms communities through youth leadership."
+        }
+    ];
+
+    let currentSlide = 0;
+    const titleElement = document.querySelector('.slide-transition');
+    const subtitleElement = titleElement.nextElementSibling;
+    const indicators = document.querySelectorAll('.bottom-4 button');
+
+    function updateSlide() {
+        titleElement.textContent = slides[currentSlide].title;
+        subtitleElement.textContent = slides[currentSlide].subtitle;
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            if (index === currentSlide) {
+                indicator.classList.add('w-8');
+                indicator.classList.remove('w-2');
+                indicator.classList.add('bg-white');
+                indicator.classList.remove('bg-white/50');
+            } else {
+                indicator.classList.remove('w-8');
+                indicator.classList.add('w-2');
+                indicator.classList.remove('bg-white');
+                indicator.classList.add('bg-white/50');
+            }
+        });
+    }
+
+    // Add click handlers for navigation
+    document.querySelector('.left-4').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlide();
+    });
+
+    document.querySelector('.right-4').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+    });
+
+    // Add click handlers for indicators
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateSlide();
+        });
+    });
+
+    // Auto-advance slides
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+    }, 5000);
+
+    // Mobile menu functionality
+    const menuButton = document.querySelector('.md\\:hidden');
+    menuButton.addEventListener('click', () => {
+        alert('Mobile menu would open here');
+    });
+</script>
+</body>
+</html>
