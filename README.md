@@ -1,69 +1,86 @@
-# Welcome to your Lovable project
+# National Youth Service (NYS) Website
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/ffc38883-ba78-495d-aec7-517f34a50eeb
+A modern, responsive website for the National Youth Service, built with React and TypeScript. The website serves as a comprehensive platform for information about NYS programs, services, and initiatives.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Modern Design**: Clean and responsive interface using Tailwind CSS and shadcn-ui
+- **Dynamic Content**: Interactive components for news, gallery, and publications
+- **Program Information**: Detailed sections for formal and non-formal programs
+- **Alumni Network**: Platform for past corps members to connect
+- **Administrative Dashboard**: Secure admin panel for content management
 
-**Use Lovable**
+## Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ffc38883-ba78-495d-aec7-517f34a50eeb) and start prompting.
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn-ui
+- **Routing**: React Router
+- **State Management**: React Query
+- **Icons**: Lucide React
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. Clone the repository:
+```bash
+git clone https://github.com/TitusJusuNabieu/NYSC-Frontend.git
+```
+2. navigate to directory
+```bash
+cd NYSC-Frontend
+```
+3. install required packages
+```bash 
+npm install
+```
+4. Run project
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components and routes
+│   ├── admin/     # Admin dashboard
+│   ├── about/     # About pages
+│   ├── programs/  # Program pages
+│   └── media-center/ # Media content
+├── styles/        # Global styles
+└── utils/         # Utility functions
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Key Features
+### Public Features
+- Home page with overview of NYS
+- Detailed program information
+- News and updates section
+- Photo gallery
+- Publications archive
+- Success stories
+- Alumni network
+- Book of Life (Corps members registry)
+### Administrative Features
+- Secure admin dashboard
+- Content management system
+- User management
+- Media upload capabilities
+- Analytics and reporting
+## Deployment
+The project can be deployed using platforms like:
 
-**Use GitHub Codespaces**
+- Netlify
+- Vercel
+- GitHub Pages
+## Contributing
+1. Fork the repository
+2. Create your feature branch ( git checkout -b feature/AmazingFeature )
+3. Commit your changes ( git commit -m 'Add some AmazingFeature' )
+4. Push to the branch ( git push origin feature/AmazingFeature )
+5. Open a Pull Request
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ffc38883-ba78-495d-aec7-517f34a50eeb) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Contact
+For any inquiries, please reach out to the development team or visit our website.
