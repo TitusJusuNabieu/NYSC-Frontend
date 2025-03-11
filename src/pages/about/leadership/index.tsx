@@ -154,7 +154,6 @@ const LeadershipPage: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-screen bg-gray-50">
         <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-40 border-b border-gray-200 shadow-sm">
   <div className="container mx-auto px-4 lg:px-8">
